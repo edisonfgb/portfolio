@@ -1,0 +1,51 @@
+<div class="app-layout">
+
+  <header class="app-header">
+    <div class="app-header__brand">
+      <span class="material-symbols-outlined app-header__brand-icon" translate="no">terminal</span>
+      <span class="app-header__brand-text">{{ brandDisplayText() }}<span class="app-header__brand-cursor"></span></span>
+    </div>
+
+    <nav class="app-header__nav">
+      <a
+        class="app-header__nav-item"
+        routerLink="/home"
+        routerLinkActive="app-header__nav-item--active"
+        [routerLinkActiveOptions]="{ exact: false }">
+        <span class="app-header__nav-item-label">{{ 'nav.home' | translate }}</span>
+      </a>
+    </nav>
+
+    <div class="app-header__lang-switch" role="group" [attr.aria-label]="'nav.langSwitchAriaLabel' | translate">
+      <button
+        type="button"
+        class="app-header__lang-option"
+        [class.app-header__lang-option--active]="currentLanguage() === 'es'"
+        (click)="setLanguage('es')">
+        ES
+      </button>
+      <button
+        type="button"
+        class="app-header__lang-option"
+        [class.app-header__lang-option--active]="currentLanguage() === 'en'"
+        (click)="setLanguage('en')">
+        EN
+      </button>
+      <span
+        class="app-header__lang-thumb"
+        [class.app-header__lang-thumb--en]="currentLanguage() === 'en'">
+      </span>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <router-outlet></router-outlet>
+  </main>
+
+  @if (fabService.portal()) {
+    <div class="global-fab-host">
+      <ng-template [cdkPortalOutlet]="fabService.portal()"></ng-template>
+    </div>
+  }
+
+</div>

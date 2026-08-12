@@ -1,0 +1,188 @@
+[
+  {
+    "id": "frontend",
+    "name": { "es": "Frontend & Web", "en": "Frontend & Web" },
+    "featured": true,
+    "order": 1,
+    "skills": [
+      { "es": "Angular", "en": "Angular" },
+      { "es": "Angular CLI", "en": "Angular CLI" },
+      { "es": "Angular Material", "en": "Angular Material" },
+      { "es": "TypeScript", "en": "TypeScript" },
+      { "es": "JavaScript (ES6+)", "en": "JavaScript (ES6+)" },
+      { "es": "HTML5", "en": "HTML5" },
+      { "es": "CSS3 / SCSS", "en": "CSS3 / SCSS" },
+      { "es": "React", "en": "React" },
+      { "es": "Aplicaciones Web Progresivas (PWA)", "en": "Progressive Web Apps (PWA)" },
+      { "es": "Service Workers", "en": "Service Workers" }
+    ]
+  },
+  {
+    "id": "backend",
+    "name": { "es": "Backend", "en": "Backend" },
+    "featured": true,
+    "order": 2,
+    "skills": [
+      { "es": "Java", "en": "Java" },
+      { "es": "Python", "en": "Python" },
+      { "es": "Spring Boot", "en": "Spring Boot" },
+      { "es": "Spring Security", "en": "Spring Security" },
+      { "es": "Spring Cloud", "en": "Spring Cloud" },
+      { "es": "Express.js", "en": "Express.js" },
+      { "es": "Node.js", "en": "Node.js" },
+      { "es": "Django / Django REST Framework", "en": "Django / Django REST Framework" },
+      { "es": "Flask", "en": "Flask" },
+      { "es": "APIs REST", "en": "REST APIs" },
+      { "es": "Microservicios", "en": "Microservices" }
+    ]
+  },
+  {
+    "id": "bases-de-datos",
+    "name": { "es": "Bases de Datos", "en": "Databases" },
+    "featured": true,
+    "order": 3,
+    "skills": [
+      { "es": "PostgreSQL", "en": "PostgreSQL" },
+      { "es": "MySQL", "en": "MySQL" },
+      { "es": "MongoDB", "en": "MongoDB" },
+      { "es": "SQL", "en": "SQL" },
+      { "es": "Oracle", "en": "Oracle" },
+      { "es": "SQL Server", "en": "SQL Server" },
+      { "es": "Cassandra", "en": "Cassandra" }
+    ]
+  },
+  {
+    "id": "testing-calidad",
+    "name": { "es": "Testing & Calidad", "en": "Testing & QA" },
+    "featured": true,
+    "order": 4,
+    "skills": [
+      { "es": "JUnit", "en": "JUnit" },
+      { "es": "Mockito", "en": "Mockito" },
+      { "es": "Jest", "en": "Jest" },
+      { "es": "Cypress", "en": "Cypress" },
+      { "es": "Selenium", "en": "Selenium" },
+      { "es": "Appium", "en": "Appium" },
+      { "es": "Postman", "en": "Postman" },
+      { "es": "SonarQube", "en": "SonarQube" },
+      { "es": "Pruebas Unitarias", "en": "Unit Testing" },
+      { "es": "Pruebas E2E", "en": "E2E Testing" }
+    ]
+  },
+  {
+    "id": "arquitectura-metodologias",
+    "name": { "es": "Arquitectura & Metodologías", "en": "Architecture & Methodologies" },
+    "featured": true,
+    "order": 5,
+    "skills": [
+      { "es": "Apache Kafka", "en": "Apache Kafka" },
+      { "es": "Arquitectura Orientada a Eventos (EDA)", "en": "Event-Driven Architecture (EDA)" },
+      { "es": "Patrón SAGA", "en": "SAGA Pattern" },
+      { "es": "Clean Architecture", "en": "Clean Architecture" },
+      { "es": "Arquitectura Hexagonal", "en": "Hexagonal Architecture" },
+      { "es": "Screaming Architecture", "en": "Screaming Architecture" },
+      { "es": "Domain-Driven Design (DDD)", "en": "Domain-Driven Design (DDD)" },
+      { "es": "Principios SOLID", "en": "SOLID Principles" },
+      { "es": "KISS", "en": "KISS" },
+      { "es": "CQRS", "en": "CQRS" },
+      { "es": "Control de Acceso Basado en Roles (RBAC)", "en": "Role-Based Access Control (RBAC)" },
+      { "es": "Ciclo de Vida de Desarrollo de Software (SDLC)", "en": "Software Development Life Cycle (SDLC)" },
+      { "es": "Scrum", "en": "Scrum" },
+      { "es": "Kanban", "en": "Kanban" },
+      { "es": "GitFlow", "en": "GitFlow" }
+    ]
+  },
+  {
+    "id": "devops-herramientas",
+    "name": { "es": "DevOps & Herramientas", "en": "DevOps & Tools" },
+    "featured": true,
+    "order": 6,
+    "skills": [
+      { "es": "Docker", "en": "Docker" },
+      { "es": "Git", "en": "Git" },
+      { "es": "GitHub", "en": "GitHub" },
+      { "es": "GitHub Actions", "en": "GitHub Actions" },
+      { "es": "Azure DevOps", "en": "Azure DevOps" },
+      { "es": "Integración y Entrega Continua (CI/CD)", "en": "Continuous Integration & Delivery (CI/CD)" },
+      { "es": "Jira", "en": "Jira" },
+      { "es": "Confluence", "en": "Confluence" },
+      { "es": "Postman", "en": "Postman" },
+      { "es": "VS Code", "en": "VS Code" }
+    ]
+  },
+  {
+    "id": "datos-machine-learning",
+    "name": { "es": "Datos & Machine Learning", "en": "Data & Machine Learning" },
+    "featured": true,
+    "order": 7,
+    "skills": [
+      { "es": "Power BI", "en": "Power BI" },
+      { "es": "Excel Avanzado", "en": "Advanced Excel" },
+      { "es": "Pandas", "en": "Pandas" },
+      { "es": "NumPy", "en": "NumPy" },
+      { "es": "TensorFlow", "en": "TensorFlow" },
+      { "es": "Keras", "en": "Keras" },
+      { "es": "Scikit-learn", "en": "Scikit-learn" },
+      { "es": "Limpieza de Datos (ETL)", "en": "Data Cleaning (ETL)" },
+      { "es": "Machine Learning", "en": "Machine Learning" },
+      { "es": "Procesamiento de Lenguaje Natural (NLP)", "en": "Natural Language Processing (NLP)" },
+      { "es": "Análisis de Datos", "en": "Data Analysis" }
+    ]
+  },
+  {
+    "id": "ciberseguridad-redes",
+    "name": { "es": "Ciberseguridad & Redes", "en": "Cybersecurity & Networking" },
+    "featured": false,
+    "order": 8,
+    "skills": [
+      { "es": "Nmap", "en": "Nmap" },
+      { "es": "Metasploit", "en": "Metasploit" },
+      { "es": "Pruebas de Penetración (Pentesting)", "en": "Penetration Testing" },
+      { "es": "Seguridad en Linux", "en": "Linux Security" },
+      { "es": "Kali Linux", "en": "Kali Linux" },
+      { "es": "VLSM", "en": "VLSM" },
+      { "es": "Cisco Packet Tracer", "en": "Cisco Packet Tracer" },
+      { "es": "Segmentación de Redes", "en": "Network Segmentation" },
+      { "es": "DHCP", "en": "DHCP" }
+    ]
+  },
+  {
+    "id": "diseno-modelado",
+    "name": { "es": "Diseño & Modelado", "en": "Design & Modeling" },
+    "featured": false,
+    "order": 9,
+    "skills": [
+      { "es": "Figma", "en": "Figma" },
+      { "es": "Draw.io", "en": "Draw.io" },
+      { "es": "Power Designer", "en": "Power Designer" },
+      { "es": "Stitch", "en": "Stitch" }
+    ]
+  },
+  {
+    "id": "habilidades-blandas",
+    "name": { "es": "Habilidades Blandas", "en": "Soft Skills" },
+    "featured": false,
+    "order": 10,
+    "skills": [
+      { "es": "Trabajo en equipo", "en": "Teamwork" },
+      { "es": "Trabajo bajo presión / Control del estrés", "en": "Working Under Pressure / Stress Management" },
+      { "es": "Comunicación efectiva", "en": "Effective Communication" },
+      { "es": "Pensamiento analítico", "en": "Analytical Thinking" },
+      { "es": "Autoaprendizaje", "en": "Self-Learning" },
+      { "es": "Autodisciplina", "en": "Self-Discipline" },
+      { "es": "Adaptabilidad", "en": "Adaptability" },
+      { "es": "Ética profesional", "en": "Professional Ethics" },
+      { "es": "Gestión de equipos", "en": "Team Management" }
+    ]
+  },
+  {
+    "id": "idiomas",
+    "name": { "es": "Idiomas", "en": "Languages" },
+    "featured": false,
+    "order": 11,
+    "skills": [
+      { "es": "Español (Nativo)", "en": "Spanish (Native)" },
+      { "es": "Inglés (B2 - Intermedio-Alto)", "en": "English (B2 - Upper-Intermediate)" }
+    ]
+  }
+]

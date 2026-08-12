@@ -1,0 +1,495 @@
+[
+  {
+    "id": "channel-scheduling-system",
+    "name": {
+      "es": "Channel Scheduling System",
+      "en": "Channel Scheduling System"
+    },
+    "category": "hibrido",
+    "featured": true,
+    "order": 1,
+    "role": {
+      "es": "Desarrollador Frontend, Analista de Requisitos, Analista de Datos (Power BI) y Tester QA",
+      "en": "Frontend Developer, Requirements Analyst, Data Analyst (Power BI) & QA Tester"
+    },
+    "period": {
+      "es": "Febrero 2026 – Presente",
+      "en": "February 2026 – Present"
+    },
+    "shortDescription": {
+      "es": "Plataforma de agendamiento de citas construida con Angular (Screaming Architecture) y panel RBAC, con un módulo de reportes en Power BI como capa de datos conectada al negocio.",
+      "en": "Angular-based appointment scheduling platform (Screaming Architecture) with an RBAC admin panel, complemented by a Power BI reporting module connected to the business data."
+    },
+    "detailedDescription": {
+      "es": "Plataforma de agendamiento de citas para negocios de servicios, desarrollada de principio a fin como parte activa del ciclo de vida completo de desarrollo de software (SDLC). Lideré el levantamiento de requisitos junto al equipo y construí el frontend con Angular aplicando Screaming Architecture, además de diseñar un panel administrativo con control de acceso basado en roles (RBAC) para tres tipos de usuario. Como complemento a la solución, implementé un módulo de reportes con Power BI conectado directamente a la base de datos, aportando visibilidad de negocio a cada trabajador — una muestra de cómo conecto el desarrollo web con soluciones basadas en datos. El proyecto también incorpora una capa de pruebas automatizadas (Cypress para E2E, Jest para componentes) y prácticas de seguridad como hasheo de contraseñas y rotación de refresh tokens.",
+      "en": "Appointment scheduling platform for service-based businesses, built end-to-end as an active part of the full Software Development Life Cycle (SDLC). I led requirements gathering with the team and built the Angular frontend applying Screaming Architecture, along with a role-based (RBAC) admin dashboard for three user types. As a complement to the core solution, I built a Power BI reporting module connected directly to the database, giving each worker visibility into their own performance — a snapshot of how I connect web development with data-driven solutions. The project also includes an automated testing layer (Cypress for E2E, Jest for components) and security practices such as password hashing and refresh token rotation."
+    },
+    "stack": [
+      "Angular",
+      "TypeScript",
+      "Power BI",
+      "Cypress",
+      "Jest",
+      "RBAC",
+      "Screaming Architecture",
+      "bcrypt"
+    ],
+    "highlights": {
+      "es": [
+        "Lideré el levantamiento de requisitos y desarrollé el sistema aplicando Screaming Architecture para una estructura clara y escalable.",
+        "Optimicé el rendimiento de la aplicación mediante lazy loading de módulos por funcionalidad.",
+        "Diseñé un panel administrativo con vistas diferenciadas para 3 tipos de usuario, integrando control de acceso basado en roles (RBAC).",
+        "Implementé un módulo de reportes con Power BI conectado a la base de datos, con dashboards de demanda, volumen de citas e ingresos por período.",
+        "Cubrí flujos críticos con pruebas E2E (Cypress) y pruebas unitarias de componentes (Jest), configurando métricas de cobertura de código (sentencia, rama y camino).",
+        "Apliqué buenas prácticas de seguridad: hasheo de contraseñas con bcrypt y refresh token rotation para el manejo de sesiones."
+      ],
+      "en": [
+        "Led requirements gathering and built the system applying Screaming Architecture for a clear, scalable structure.",
+        "Improved application performance through feature-based lazy loading of Angular modules.",
+        "Designed an admin dashboard with role-differentiated views for 3 user types, implementing role-based access control (RBAC).",
+        "Built a Power BI reporting module connected directly to the database, with dashboards on demand, appointment volume, and revenue.",
+        "Covered critical flows with E2E tests (Cypress) and component unit tests (Jest), configuring statement, branch, and path coverage metrics.",
+        "Applied security best practices: bcrypt password hashing and refresh token rotation for session handling."
+      ]
+    },
+    "repos": [
+      {
+        "title": {
+          "es": "Repositorio",
+          "en": "Repository"
+        },
+        "url": "https://github.com/Channel-Scheduling-System/Channel_Scheduling_System"
+      }
+    ],
+    "demoUrl": "https://channel-scheduling-system.onrender.com",
+    "videoUrl": null,
+    "imageUrl": "revisar"
+  },
+  {
+    "id": "pwa-inventory-mades",
+    "name": {
+      "es": "MADES – Sistema de Gestión de Inventarios PWA",
+      "en": "MADES – PWA Inventory Management System"
+    },
+    "category": "hibrido",
+    "featured": true,
+    "order": 2,
+    "role": {
+      "es": "Desarrollador Full Stack, Analista de Requisitos y Analista de Datos",
+      "en": "Full Stack Developer, Requirements Analyst & Data Analyst"
+    },
+    "period": {
+      "es": "Marzo 2026 – Junio 2026",
+      "en": "March 2026 – June 2026"
+    },
+    "shortDescription": {
+      "es": "PWA de gestión de inventarios con React, soporte offline vía Service Worker/IndexedDB y un módulo de estadísticas de stock como capa de datos.",
+      "en": "Inventory management PWA built with React, offline support via Service Worker/IndexedDB, and a stock statistics module as its data layer."
+    },
+    "detailedDescription": {
+      "es": "Aplicación web progresiva (PWA) para la gestión de inventarios de un negocio de ventas, participando en todo el ciclo de definición de requisitos y diseño de la solución. Construí el frontend con React implementando un Service Worker con Workbox que sincroniza datos mediante IndexedDB para habilitar el uso offline, y desarrollé en el backend con Express.js los módulos de productos y notificaciones. Sobre esa misma base, expuse endpoints de estadísticas de inventario (stock, movimientos y disponibilidad) consumidos en tiempo real desde el frontend, aplicando mi interés por conectar el desarrollo de software con el análisis de datos. También brindé soporte técnico de nivel 2 durante la implementación.",
+      "en": "Progressive Web App (PWA) for inventory management at a retail business, involved in the full requirements definition and solution design process. I built the React frontend implementing a Service Worker with Workbox that syncs data via IndexedDB to enable offline usage, and developed the products and notifications modules on the Express.js backend. On top of that same foundation, I exposed inventory statistics endpoints (stock, movement, and availability) consumed in real time from the frontend, reflecting my interest in connecting software development with data analysis. I also provided Level 2 technical support during rollout."
+    },
+    "stack": [
+      "React",
+      "Express.js",
+      "IndexedDB",
+      "Workbox",
+      "Service Workers",
+      "REST APIs"
+    ],
+    "highlights": {
+      "es": [
+        "Colaboré en la definición de requisitos y el diseño de la solución, desarrollando el frontend con React.",
+        "Implementé un Service Worker con Workbox para interceptar peticiones y sincronizar datos mediante IndexedDB, habilitando uso offline.",
+        "Desarrollé los módulos de productos y notificaciones en el backend con Express.js.",
+        "Expuse endpoints de estadísticas de inventario (stock, movimientos, disponibilidad) consumidos en tiempo real desde el frontend.",
+        "Brindé soporte técnico de nivel 2 durante la implementación, documentando incidencias de sincronización de datos."
+      ],
+      "en": [
+        "Collaborated on requirements definition and solution design, building the frontend with React.",
+        "Implemented a Service Worker with Workbox to intercept requests and sync data via IndexedDB, enabling offline usage.",
+        "Built the products and notifications modules on the Express.js backend.",
+        "Exposed inventory statistics endpoints (stock, movement, availability) consumed in real time from the frontend.",
+        "Provided Level 2 technical support during rollout, documenting data synchronization issues."
+      ]
+    },
+    "repos": [
+      {
+        "title": {
+          "es": "Repositorio",
+          "en": "Repository"
+        },
+        "url": "https://github.com/MADES-Sales-Inventory-PWA/mades-app"
+      }
+    ],
+    "demoUrl": "https://mades-app.vercel.app",
+    "videoUrl": null,
+    "imageUrl": "revisar"
+  },
+  {
+    "id": "parking-access-management",
+    "name": {
+      "es": "Sistema de Gestión de Accesos a Parqueadero",
+      "en": "Parking Access Management System"
+    },
+    "category": "software",
+    "featured": true,
+    "order": 3,
+    "role": {
+      "es": "Desarrollador Full Stack & Analista de QA/Soporte Técnico",
+      "en": "Full Stack Developer & QA / Technical Support Analyst"
+    },
+    "period": {
+      "es": "Septiembre 2025 – Noviembre 2025",
+      "en": "September 2025 – November 2025"
+    },
+    "shortDescription": {
+      "es": "Sistema de control de accesos con arquitectura de microservicios, Angular + Spring Boot, arquitectura hexagonal y comunicación asíncrona con Kafka.",
+      "en": "Access control system with a microservices architecture, Angular + Spring Boot, hexagonal architecture, and asynchronous communication with Kafka."
+    },
+    "detailedDescription": {
+      "es": "Sistema de control de accesos para un parqueadero, diseñado como una arquitectura de microservicios. Desarrollé el frontend en Angular y el backend en Spring Boot aplicando arquitectura hexagonal y Domain-Driven Design (DDD) para mantener la lógica de negocio desacoplada de frameworks y detalles de infraestructura. La comunicación entre microservicios se resolvió de forma asíncrona con Apache Kafka, aplicando el patrón SAGA dentro de una arquitectura orientada a eventos (EDA) para mantener la consistencia entre servicios sin transacciones distribuidas tradicionales. En seguridad, configuré rotación de refresh tokens y middlewares de autenticación en múltiples capas del sistema. Además, ejecuté pruebas sobre los middlewares de autenticación, documentando bugs y hallazgos de seguridad en los flujos de acceso.",
+      "en": "Access control system for a parking facility, designed as a microservices architecture. I built the Angular frontend and the Spring Boot backend applying Hexagonal Architecture and Domain-Driven Design (DDD) to keep business logic decoupled from frameworks and infrastructure details. Communication between microservices was handled asynchronously with Apache Kafka, applying the SAGA pattern within an Event-Driven Architecture (EDA) to maintain consistency across services without traditional distributed transactions. On the security side, I configured refresh token rotation and authentication middlewares across multiple layers of the system. I also tested the authentication middlewares, documenting bugs and access-security findings."
+    },
+    "stack": [
+      "Angular",
+      "Spring Boot",
+      "Apache Kafka",
+      "Hexagonal Architecture",
+      "DDD",
+      "Microservices",
+      "JWT",
+      "SAGA",
+      "EDA"
+    ],
+    "highlights": {
+      "es": [
+        "Desarrollé el frontend con Angular y el backend con Spring Boot bajo arquitectura hexagonal y Domain-Driven Design (DDD).",
+        "Implementé comunicación asíncrona entre microservicios con Apache Kafka, aplicando el patrón SAGA y arquitectura orientada a eventos (EDA).",
+        "Configuré refresh token rotation y middlewares de autenticación para reforzar la seguridad en múltiples capas.",
+        "Ejecuté pruebas sobre middlewares de autenticación, documentando bugs y hallazgos de seguridad en accesos."
+      ],
+      "en": [
+        "Built the frontend with Angular and the backend with Spring Boot under Hexagonal Architecture and Domain-Driven Design (DDD).",
+        "Implemented asynchronous communication between microservices with Apache Kafka, applying the SAGA pattern and Event-Driven Architecture (EDA).",
+        "Configured refresh token rotation and authentication middlewares to strengthen security across layers.",
+        "Tested authentication middlewares, documenting bugs and access-security findings."
+      ]
+    },
+    "repos": [
+      {
+        "title": {
+          "es": "Frontend",
+          "en": "Frontend"
+        },
+        "url": "https://github.com/edisonfgb/Access_Control_Frontend"
+      },
+      {
+        "title": {
+          "es": "Microservicio de Empleados",
+          "en": "Employee Microservice"
+        },
+        "url": "https://github.com/edisonfgb/EmployeeMicroservice"
+      }
+    ],
+    "demoUrl": null,
+    "videoUrl": "revisar",
+    "imageUrl": "revisar"
+  },
+  {
+    "id": "event-management-django",
+    "name": {
+      "es": "Sistema de Gestión de Eventos",
+      "en": "Event Management System"
+    },
+    "category": "software",
+    "featured": true,
+    "order": 4,
+    "role": {
+      "es": "Desarrollador Frontend & Backend (Controladores)",
+      "en": "Frontend Developer & Backend (Controllers)"
+    },
+    "period": {
+      "es": "revisar",
+      "en": "revisar"
+    },
+    "shortDescription": {
+      "es": "Sistema de gestión de eventos construido con Django, con vistas basadas en plantillas y un mini frontend en JavaScript sobre los archivos estáticos del proyecto.",
+      "en": "Event management system built with Django, using template-based views and a small vanilla JavaScript frontend served from the project's static files."
+    },
+    "detailedDescription": {
+      "es": "Sistema de gestión de eventos desarrollado con Django, siguiendo el patrón de vistas basadas en plantillas (server-side rendering) en vez de una SPA separada. Me encargué de toda la parte de frontend — la interactividad se construyó con un mini frontend en JavaScript integrado en los archivos estáticos del proyecto (sin framework, JS vanilla) — y también de los controladores (views) que conectan las plantillas con la lógica de negocio y el acceso a datos. La persistencia se maneja con IndexedDB en el navegador.",
+      "en": "Event management system built with Django, following the template-based views pattern (server-side rendering) instead of a separate SPA. I was responsible for the entire frontend layer — interactivity was built with a small vanilla JavaScript frontend integrated into the project's static files — and also for the controllers (views) connecting templates to business logic and data access. Persistence is handled with IndexedDB in the browser."
+    },
+    "stack": [
+      "Django",
+      "Python",
+      "JavaScript",
+      "IndexedDB",
+      "HTML5",
+      "CSS3"
+    ],
+    "highlights": {
+      "es": [
+        "Desarrollé la totalidad del frontend: plantillas Django y un mini frontend en JavaScript vanilla sobre los archivos estáticos del proyecto.",
+        "Implementé los controladores (views) de Django que conectan las plantillas con la lógica de negocio.",
+        "Integré IndexedDB como mecanismo de persistencia de datos en el navegador.",
+        "Trabajé bajo el patrón de renderizado del lado del servidor (server-side rendering) con vistas basadas en plantillas."
+      ],
+      "en": [
+        "Built the entire frontend layer: Django templates plus a small vanilla JavaScript frontend on top of the project's static files.",
+        "Implemented the Django controllers (views) connecting templates to business logic.",
+        "Integrated IndexedDB as the browser-side data persistence mechanism.",
+        "Worked within a server-side rendering pattern using template-based views."
+      ]
+    },
+    "repos": [
+      {
+        "title": {
+          "es": "Repositorio",
+          "en": "Repository"
+        },
+        "url": "https://github.com/Johan-1502/initial_final_project.git"
+      }
+    ],
+    "demoUrl": "revisar",
+    "videoUrl": "revisar",
+    "imageUrl": "revisar"
+  },
+  {
+    "id": "flower-disease-classification",
+    "name": {
+      "es": "Clasificación de Enfermedades en Flores – Machine Learning",
+      "en": "Flower Disease Classification – Machine Learning"
+    },
+    "category": "datos",
+    "featured": false,
+    "order": 5,
+    "role": {
+      "es": "Ingeniero de Machine Learning & Analista de Datos",
+      "en": "Machine Learning Engineer & Data Analyst"
+    },
+    "period": {
+      "es": "Septiembre 2025 – Noviembre 2025",
+      "en": "September 2025 – November 2025"
+    },
+    "shortDescription": {
+      "es": "Modelo de red neuronal convolucional (CNN) para clasificar enfermedades en cultivos de flores a partir de imágenes, con API de inferencia en tiempo real.",
+      "en": "Convolutional Neural Network (CNN) model to classify crop diseases in flowers from images, served through a real-time inference API."
+    },
+    "detailedDescription": {
+      "es": "Proyecto de machine learning enfocado en la detección temprana de enfermedades en cultivos de flores a partir de imágenes. Entrené una red neuronal convolucional (CNN) con TensorFlow/Keras sobre un dataset balanceado de miles de imágenes, realizando limpieza y preprocesamiento de datos con Pandas. El modelo resultante (.h5) se expuso a través de una API de inferencia construida con Flask, que preprocesa las imágenes de entrada con PIL antes de clasificarlas, identificando tanto el tipo de cultivo como la enfermedad específica presente.",
+      "en": "Machine learning project focused on early disease detection in flower crops from images. I trained a convolutional neural network (CNN) with TensorFlow/Keras on a balanced dataset of thousands of images, performing data cleaning and preprocessing with Pandas. The resulting model (.h5) was exposed through an inference API built with Flask, which preprocesses input images with PIL before classifying them, identifying both the crop type and the specific disease present."
+    },
+    "stack": [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "Pandas",
+      "Flask",
+      "PIL",
+      "Machine Learning",
+      "ETL"
+    ],
+    "highlights": {
+      "es": [
+        "Entrené una red neuronal convolucional con TensorFlow/Keras sobre un dataset balanceado de miles de imágenes.",
+        "Realicé limpieza y preprocesamiento de datos (ETL) con Pandas, e implementé clasificación multiclase (tipo de cultivo y enfermedad).",
+        "Desarrollé una API de inferencia con Flask que consume el modelo entrenado (.h5), preprocesando imágenes con PIL.",
+        "Desplegué una interfaz web para cargar imágenes y visualizar resultados de clasificación en tiempo real."
+      ],
+      "en": [
+        "Trained a convolutional neural network with TensorFlow/Keras on a balanced dataset of thousands of images.",
+        "Performed data cleaning and preprocessing (ETL) with Pandas, and implemented multiclass classification (crop type and disease).",
+        "Built a Flask inference API serving the trained model (.h5), preprocessing images with PIL.",
+        "Deployed a web interface for image upload and real-time classification results."
+      ]
+    },
+    "repos": [
+      {
+        "title": {
+          "es": "Repositorio",
+          "en": "Repository"
+        },
+        "url": "https://github.com/edisonfgb/Classification_of_Flower_Diseases"
+      }
+    ],
+    "demoUrl": "revisar",
+    "videoUrl": null,
+    "imageUrl": "revisar"
+  },
+  {
+    "id": "pentesting-eternalblue",
+    "name": {
+      "es": "Pentesting – Explotación de EternalBlue",
+      "en": "Penetration Testing – EternalBlue Exploitation"
+    },
+    "category": "seguridad",
+    "featured": false,
+    "order": 6,
+    "role": {
+      "es": "Pentester / Analista de Seguridad",
+      "en": "Penetration Tester / Security Analyst"
+    },
+    "period": {
+      "es": "Septiembre 2025 – Noviembre 2025",
+      "en": "September 2025 – November 2025"
+    },
+    "shortDescription": {
+      "es": "Ejercicio de pentesting en entorno controlado explotando la vulnerabilidad EternalBlue (MS17-010), desde el reconocimiento hasta el informe de hallazgos.",
+      "en": "Controlled-environment penetration testing exercise exploiting the EternalBlue (MS17-010) vulnerability, from reconnaissance to findings report."
+    },
+    "detailedDescription": {
+      "es": "Ejercicio práctico de pentesting en un entorno controlado, siguiendo la metodología completa: reconocimiento, análisis de vulnerabilidades, explotación y reporte. Utilicé Nmap y Recon-ng para el reconocimiento de la infraestructura objetivo, GVM (Greenbone) para el análisis de vulnerabilidades, y exploté la vulnerabilidad MS17-010 (EternalBlue) con Metasploit/Meterpreter para obtener acceso remoto. El ejercicio concluyó con un informe técnico documentando los hallazgos y recomendaciones de mitigación.",
+      "en": "Hands-on penetration testing exercise in a controlled environment, following the full methodology: reconnaissance, vulnerability analysis, exploitation, and reporting. I used Nmap and Recon-ng to map the target infrastructure, GVM (Greenbone) for vulnerability analysis, and exploited the MS17-010 (EternalBlue) vulnerability with Metasploit/Meterpreter to gain remote access. The exercise concluded with a technical report documenting findings and mitigation recommendations."
+    },
+    "stack": [
+      "Nmap",
+      "Recon-ng",
+      "GVM (Greenbone)",
+      "Metasploit",
+      "Meterpreter",
+      "Pentesting"
+    ],
+    "highlights": {
+      "es": [
+        "Ejecuté reconocimiento y análisis de superficie de ataque con Nmap y Recon-ng, identificando vectores de ataque activos.",
+        "Realicé análisis de vulnerabilidades con GVM (Greenbone) para detectar riesgos en la infraestructura.",
+        "Exploté la vulnerabilidad MS17-010 (EternalBlue) mediante Metasploit/Meterpreter en un entorno controlado.",
+        "Elaboré un informe técnico de hallazgos con evidencias y recomendaciones de mitigación."
+      ],
+      "en": [
+        "Performed reconnaissance and attack-surface analysis with Nmap and Recon-ng, identifying active attack vectors.",
+        "Conducted vulnerability analysis with GVM (Greenbone) to detect infrastructure risks.",
+        "Exploited the MS17-010 (EternalBlue) vulnerability using Metasploit/Meterpreter in a controlled environment.",
+        "Produced a technical findings report with evidence and mitigation recommendations."
+      ]
+    },
+    "repos": [
+      {
+        "title": {
+          "es": "Informe",
+          "en": "Report"
+        },
+        "url": "https://github.com/edisonfgb/EternalBluePentesting"
+      }
+    ],
+    "demoUrl": null,
+    "videoUrl": "revisar",
+    "imageUrl": "revisar"
+  },
+  {
+    "id": "mobile-testing-android",
+    "name": {
+      "es": "Pruebas Móviles – App Android",
+      "en": "Mobile Testing – Android App"
+    },
+    "category": "testing",
+    "featured": false,
+    "order": 7,
+    "role": {
+      "es": "Tester Móvil & Colaborador en Definición de Requisitos",
+      "en": "Mobile QA Tester & Requirements Contributor"
+    },
+    "period": {
+      "es": "revisar",
+      "en": "revisar"
+    },
+    "shortDescription": {
+      "es": "Automatización de pruebas end-to-end para una aplicación Android, simulando interacciones reales de usuario sobre un dispositivo virtual.",
+      "en": "End-to-end test automation for an Android application, simulating real user interactions on a virtual device."
+    },
+    "detailedDescription": {
+      "es": "Automaticé pruebas móviles con Appium y WebDriverIO sobre un emulador de Android Studio, ejecutando casos de prueba end-to-end que simulan interacciones reales de usuario sobre la aplicación. Además de la automatización, colaboré con el equipo en la definición de requisitos y en el diseño de la solución antes de iniciar la fase de pruebas.",
+      "en": "I automated mobile testing with Appium and WebDriverIO on an Android Studio emulator, running end-to-end test cases that simulate real user interactions with the application. Beyond automation, I collaborated with the team on requirements definition and solution design before starting the testing phase."
+    },
+    "stack": [
+      "Appium",
+      "WebDriverIO",
+      "Android Studio",
+      "E2E Testing",
+      "QA"
+    ],
+    "highlights": {
+      "es": [
+        "Automaticé pruebas móviles con Appium y WebDriverIO sobre un emulador de Android Studio.",
+        "Ejecuté casos de prueba E2E simulando interacciones reales de usuario en un dispositivo virtual.",
+        "Colaboré en la definición de requisitos y el diseño de la solución junto al equipo."
+      ],
+      "en": [
+        "Automated mobile testing with Appium and WebDriverIO on an Android Studio emulator.",
+        "Executed E2E test cases simulating real user interactions on a virtual device.",
+        "Collaborated on requirements definition and solution design with the team."
+      ]
+    },
+    "repos": [
+      {
+        "title": {
+          "es": "Repositorio",
+          "en": "Repository"
+        },
+        "url": "https://github.com/edisonfgb/MobileTests"
+      }
+    ],
+    "demoUrl": null,
+    "videoUrl": "revisar",
+    "imageUrl": "revisar"
+  },
+  {
+    "id": "dhcp-network-segmentation",
+    "name": {
+      "es": "Servidor DHCP en Red Privada Segmentada",
+      "en": "DHCP Server on a Segmented Private Network"
+    },
+    "category": "redes",
+    "featured": false,
+    "order": 8,
+    "role": {
+      "es": "Administrador de Redes",
+      "en": "Network Administrator"
+    },
+    "period": {
+      "es": "revisar",
+      "en": "revisar"
+    },
+    "shortDescription": {
+      "es": "Configuración de un servidor DHCP en una red privada segmentada, con asignación dinámica de IPs y control de acceso por subredes.",
+      "en": "DHCP server setup on a segmented private network, with dynamic IP allocation and subnet-based access control."
+    },
+    "detailedDescription": {
+      "es": "Configuré un servidor DHCP dentro de una red privada controlada, gestionando la asignación dinámica de direcciones IP a dispositivos autorizados. Implementé controles para bloquear el acceso de IPs no autorizadas a la red y definí rangos de arrendamiento y segmentación por subredes para reforzar la seguridad de la infraestructura.",
+      "en": "I configured a DHCP server within a controlled private network, managing dynamic IP address allocation for authorized devices. I implemented controls to block unauthorized IPs from accessing the network and defined lease ranges and subnet segmentation to strengthen infrastructure security."
+    },
+    "stack": [
+      "DHCP",
+      "Network Segmentation",
+      "Subnetting",
+      "IP Access Control"
+    ],
+    "highlights": {
+      "es": [
+        "Configuré un servidor DHCP dentro de una red privada controlada con asignación dinámica de direcciones IP.",
+        "Implementé controles para bloquear el acceso de IPs no autorizadas a la red.",
+        "Definí rangos de arrendamiento y segmentación por subredes para reforzar la seguridad de la infraestructura."
+      ],
+      "en": [
+        "Configured a DHCP server within a controlled private network with dynamic IP address allocation.",
+        "Implemented controls to block unauthorized IP access to the network.",
+        "Defined lease ranges and subnet segmentation to strengthen infrastructure security."
+      ]
+    },
+    "repos": [
+      {
+        "title": {
+          "es": "Repositorio",
+          "en": "Repository"
+        },
+        "url": "revisar"
+      }
+    ],
+    "demoUrl": null,
+    "videoUrl": "revisar",
+    "imageUrl": "revisar"
+  }
+]

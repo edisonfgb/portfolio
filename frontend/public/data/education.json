@@ -1,0 +1,84 @@
+[
+  {
+    "id": "uptc-ingenieria-sistemas",
+    "institution": "Universidad Pedagógica y Tecnológica de Colombia (UPTC)",
+    "title": {
+      "es": "Ingeniería de Sistemas y Computación",
+      "en": "Bachelor's Degree, Systems and Computing Engineering"
+    },
+    "period": {
+      "es": "Febrero 2022 – Abril 2027",
+      "en": "February 2022 – April 2027"
+    },
+    "description": {
+      "es": "Miembro activo del Grupo de Investigación en Software (GIS) desde 2024, enfocado en la evaluación de arquitecturas de software, desarrollo de prototipos tecnológicos y metodologías emergentes. Enfoqué mi participación en el diseño, arquitectura y desarrollo de videojuegos, aplicando conceptos avanzados de lógica de programación y optimización. Formación enfocada en el ciclo de vida del software, infraestructura y ciencias de la computación.",
+      "en": "Active member of the Software Research Group (GIS) since 2024, focused on software architecture evaluation, technology prototyping, and emerging methodologies. I focused my involvement on the design, architecture, and development of video games, applying advanced concepts of programming logic and optimization. Education focused on the software life cycle, infrastructure, and computer science."
+    },
+    "areas": {
+      "es": [
+        "Software y Programación: diseño de arquitecturas, patrones de diseño, principios SOLID y diversos paradigmas.",
+        "Bases de Datos: modelado relacional y NoSQL, optimización de consultas y gestión de almacenamiento.",
+        "Telemática: redes de computadores, protocolos de comunicación y conectividad.",
+        "Ciencias de la Computación: sistemas operativos, lenguajes formales, inteligencia computacional, simulación y arquitectura de computadores."
+      ],
+      "en": [
+        "Software & Programming: architecture design, design patterns, SOLID principles, and multiple paradigms.",
+        "Databases: relational and NoSQL modeling, query optimization, and storage management.",
+        "Telematics: computer networks, communication protocols, and connectivity.",
+        "Computer Science: operating systems, formal languages, computational intelligence, simulation, and computer architecture."
+      ]
+    },
+    "grade": null,
+    "logoUrl": "revisar",
+    "featured": true,
+    "order": 1
+  },
+  {
+    "id": "sena-tecnico-sistemas",
+    "institution": "Servicio Nacional de Aprendizaje (SENA)",
+    "title": {
+      "es": "Tecnicatura, Análisis de Sistemas Informáticos",
+      "en": "Systems Technician, Information Technology"
+    },
+    "period": {
+      "es": "Enero 2019 – Noviembre 2021",
+      "en": "January 2019 – November 2021"
+    },
+    "description": {
+      "es": null,
+      "en": null
+    },
+    "areas": {
+      "es": [],
+      "en": []
+    },
+    "grade": "4.3",
+    "logoUrl": "revisar",
+    "featured": true,
+    "order": 2
+  },
+  {
+    "id": "ied-agroindustrial-choconta",
+    "institution": "I.E.D. Agroindustrial Santiago de Chocontá",
+    "title": {
+      "es": "Bachillerato",
+      "en": "High School Diploma"
+    },
+    "period": {
+      "es": "Enero 2016 – Noviembre 2021",
+      "en": "January 2016 – November 2021"
+    },
+    "description": {
+      "es": null,
+      "en": null
+    },
+    "areas": {
+      "es": [],
+      "en": []
+    },
+    "grade": null,
+    "logoUrl": "revisar",
+    "featured": false,
+    "order": 3
+  }
+]
