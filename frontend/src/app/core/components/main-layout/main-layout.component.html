@@ -42,6 +42,17 @@
     <router-outlet></router-outlet>
   </main>
 
+  <footer class="app-footer-nav">
+    <a
+      class="app-footer-nav__item"
+      routerLink="/home"
+      routerLinkActive="app-footer-nav__item--active"
+      [routerLinkActiveOptions]="{ exact: false }">
+      <span class="material-symbols-outlined app-footer-nav__icon" translate="no">home</span>
+      <span class="app-footer-nav__label">{{ 'nav.home' | translate }}</span>
+    </a>
+  </footer>
+
   @if (fabService.portal()) {
     <div class="global-fab-host">
       <ng-template [cdkPortalOutlet]="fabService.portal()"></ng-template>
