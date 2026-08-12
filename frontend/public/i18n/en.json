@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "Home",
+    "langSwitchAriaLabel": "Language selector"
+  },
+  "common": {
+    "loading": "Loading…",
+    "retry": "Could not load this section. Retry"
+  },
+  "home": {
+    "heroEyebrow": "Software Engineer",
+    "heroRole": "Full Stack · Frontend & Backend · Architecture",
+    "heroPitch": "I build software with clean, deliberate architecture — not just code that works. I work comfortably across the full stack — Angular and React interfaces, APIs and business logic in Spring Boot and Express — with a solid data engineering foundation as a complement.",
+    "heroCta": "View projects",
+    "projectsLabel": "Projects",
+    "skillsLabel": "Skills",
+    "educationLabel": "Education",
+    "contactLabel": "Contact",
+    "contactPitch": "Looking for an intern or want to talk about an opportunity? These are the fastest ways to reach me.",
+    "contactWhatsapp": "Message me on WhatsApp",
+    "contactLinkedin": "Visit my LinkedIn profile",
+    "contactGithub": "Visit my GitHub profile",
+    "emptyProjects": "No projects published here yet.",
+    "emptySkills": "No skills published here yet.",
+    "emptyEducation": "No education published here yet."
+  }
+}
