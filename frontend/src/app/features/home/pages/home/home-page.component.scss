@@ -1,0 +1,590 @@
+$bg-navy: #0a0e1a;
+$bg-surface: #10152a;
+$border-navy: #1b2340;
+$text-base: #f2f3f5;
+$text-muted: #7d8496;
+$accent-orange: #ff7a29;
+$accent-blue: #2f6fed;
+
+$font-display: 'Manrope', sans-serif;
+$font-mono: 'JetBrains Mono', monospace;
+
+$transition-reveal: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+// ------------------------------------------------------------
+// Scroll reveal base
+// ------------------------------------------------------------
+:host ::ng-deep .scroll-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity $transition-reveal, transform $transition-reveal;
+
+  &--visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :host ::ng-deep .scroll-reveal {
+    transition: none;
+  }
+}
+
+:host {
+  display: block;
+  background: $bg-navy;
+  color: $text-base;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+// ============================================================
+// HERO
+// ============================================================
+.hero {
+  min-height: calc(100svh - 4.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0 clamp(1.5rem, 6vw, 6rem);
+  max-width: 56rem;
+
+  &__eyebrow {
+    font-family: $font-mono;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $accent-orange;
+  }
+
+  &__title {
+    font-family: $font-display;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    margin: 0;
+  }
+
+  &__role {
+    font-family: $font-mono;
+    font-size: 0.95rem;
+    color: $accent-blue;
+    letter-spacing: 0.02em;
+  }
+
+  &__pitch {
+    font-family: $font-display;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: $text-muted;
+    max-width: 38rem;
+    margin: 0.5rem 0 1rem;
+  }
+
+  &__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid $border-navy;
+    border-radius: 999px;
+    color: $text-base;
+    text-decoration: none;
+    font-family: $font-display;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: border-color 0.25s ease, transform 0.25s ease, background-color 0.25s ease;
+
+    .material-symbols-outlined {
+      font-size: 1.1rem !important;
+      transition: transform 0.25s ease;
+    }
+
+    &:hover,
+    &:focus-visible {
+      border-color: $accent-orange;
+      background: rgba($accent-orange, 0.08);
+      transform: translateY(2px);
+
+      .material-symbols-outlined {
+        transform: translateY(3px);
+      }
+    }
+  }
+}
+
+// ============================================================
+// MODULE TRACE
+// ============================================================
+.module-trace {
+  position: relative;
+  padding: 0 clamp(1.5rem, 6vw, 6rem) 6rem;
+  max-width: 72rem;
+  margin: 0 auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0.6rem;
+    bottom: 3rem;
+    left: clamp(1.5rem, 6vw, 6rem);
+    width: 1px;
+    background: linear-gradient(
+      to bottom,
+      rgba($accent-blue, 0.4),
+      rgba($border-navy, 0.8) 15%,
+      rgba($border-navy, 0.8) 85%,
+      rgba($accent-orange, 0.4)
+    );
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0.6rem;
+    left: calc(-1 * (100vw - 100%) / 2);
+    width: calc((100vw - 100%) / 2 + clamp(1.5rem, 6vw, 6rem));
+    height: 1px;
+    background:
+      radial-gradient(circle, $accent-blue 0 3px, transparent 4px) left center / 8px 8px no-repeat,
+      linear-gradient(to right, rgba($accent-blue, 0.5), rgba($accent-blue, 0.15));
+  }
+}
+
+.module {
+  position: relative;
+  padding: 5rem 0 1.5rem 2.25rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &__node {
+    position: absolute;
+    left: -0.3rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 999px;
+    background: $bg-navy;
+    border: 2px solid $accent-blue;
+  }
+
+  &__import {
+    font-family: $font-mono;
+    font-size: 0.95rem;
+    color: $text-muted;
+    margin: 0;
+  }
+
+  &__kw {
+    color: $accent-orange;
+  }
+
+  &__name {
+    color: $text-base;
+    font-weight: 600;
+  }
+
+  &__path {
+    color: $accent-blue;
+  }
+
+  &__state {
+    font-family: $font-display;
+    color: $text-muted;
+    font-size: 0.95rem;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: default;
+
+    &--error {
+      cursor: pointer;
+      color: $accent-orange;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+
+      &:hover,
+      &:focus-visible {
+        color: lighten($accent-orange, 8%);
+      }
+    }
+  }
+}
+
+// ============================================================
+// PROJECTS
+// ============================================================
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  gap: 1.25rem;
+}
+
+.project-card {
+  position: relative;
+  background: $bg-surface;
+  border: 1px solid $border-navy;
+  border-radius: 0.85rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: $accent-blue;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  }
+
+  &--featured {
+    border-color: rgba($accent-orange, 0.5);
+
+    &:hover {
+      border-color: $accent-orange;
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    top: -0.6rem;
+    right: 1.25rem;
+    background: $accent-orange;
+    color: $bg-navy;
+    font-size: 0.75rem;
+    font-weight: 800;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__category {
+    font-family: $font-mono;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $accent-blue;
+  }
+
+  &__name {
+    font-family: $font-display;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__period {
+    font-family: $font-mono;
+    font-size: 0.75rem;
+    color: $text-muted;
+    margin: -0.4rem 0 0;
+  }
+
+  &__desc {
+    font-family: $font-display;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: $text-muted;
+    margin: 0;
+  }
+
+  &__stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0.25rem 0 0;
+
+    li {
+      font-family: $font-mono;
+      font-size: 0.7rem;
+      padding: 0.2rem 0.55rem;
+      border: 1px solid $border-navy;
+      border-radius: 999px;
+      color: $text-muted;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+
+    a {
+      font-family: $font-display;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: $text-base;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s ease, border-color 0.2s ease;
+
+      &:hover,
+      &:focus-visible {
+        color: $accent-orange;
+        border-color: $accent-orange;
+      }
+    }
+  }
+}
+
+// ============================================================
+// SKILLS
+// ============================================================
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1.25rem;
+}
+
+.skill-category {
+  &__name {
+    font-family: $font-display;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 0.75rem;
+  }
+
+  &__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      font-family: $font-mono;
+      font-size: 0.75rem;
+      padding: 0.3rem 0.7rem;
+      background: $bg-surface;
+      border: 1px solid $border-navy;
+      border-radius: 0.5rem;
+      color: $text-muted;
+      transition: border-color 0.2s ease, color 0.2s ease;
+
+      &:hover {
+        border-color: $accent-orange;
+        color: $text-base;
+      }
+    }
+  }
+}
+
+// ============================================================
+// EDUCATION — timeline
+// ============================================================
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 1.75rem;
+
+  &__node {
+    position: absolute;
+    left: 0;
+    top: 0.35rem;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 999px;
+    background: $accent-orange;
+  }
+
+  &__title {
+    font-family: $font-display;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__institution {
+    font-family: $font-display;
+    font-size: 0.9rem;
+    color: $text-muted;
+    margin: 0.15rem 0 0;
+  }
+
+  &__period {
+    font-family: $font-mono;
+    font-size: 0.75rem;
+    color: $accent-blue;
+    margin: 0.3rem 0 0;
+  }
+
+  &__desc {
+    font-family: $font-display;
+    font-size: 0.85rem;
+    line-height: 1.55;
+    color: $text-muted;
+    margin: 0.6rem 0 0;
+    max-width: 42rem;
+  }
+
+  &__areas {
+    list-style: none;
+    padding: 0;
+    margin: 0.6rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+
+    li {
+      font-family: $font-display;
+      font-size: 0.8rem;
+      color: $text-muted;
+      padding-left: 0.9rem;
+      position: relative;
+
+      &::before {
+        content: '·';
+        position: absolute;
+        left: 0;
+        color: $accent-orange;
+      }
+    }
+  }
+
+  &__grade {
+    font-family: $font-mono;
+    font-size: 0.75rem;
+    color: $text-base;
+    margin: 0.6rem 0 0;
+  }
+}
+
+// ============================================================
+// CONTACT
+// ============================================================
+.contact__pitch {
+  font-family: $font-display;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: $text-muted;
+  margin: 0 0 1.75rem;
+  max-width: 36rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.1rem 1.5rem;
+  border: 1px solid $border-navy;
+  border-radius: 1rem;
+  background: rgba($bg-surface, 0.6);
+  text-decoration: none;
+  color: $text-muted;
+  transition: border-color 0.25s ease, background-color 0.25s ease, transform 0.25s ease;
+
+  &:hover,
+  &:focus-visible {
+    border-color: rgba($accent-blue, 0.5);
+    background: rgba($bg-surface, 0.9);
+    transform: translateY(-2px);
+
+    .contact-link__icon {
+      animation: contact-bounce 0.6s ease;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background: rgba($accent-blue, 0.12);
+    color: $accent-blue;
+
+    svg {
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+  }
+
+  &__label {
+    font-family: $font-mono;
+    font-size: 0.75rem;
+    color: $text-base;
+  }
+
+  &--whatsapp:hover .contact-link__icon {
+    animation-delay: 0s;
+  }
+
+  &--linkedin:hover .contact-link__icon {
+    animation-delay: 0.05s;
+  }
+
+  &--github:hover .contact-link__icon {
+    animation-delay: 0.1s;
+  }
+}
+
+@keyframes contact-bounce {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  30% {
+    transform: translateY(-6px) scale(1.08);
+  }
+  55% {
+    transform: translateY(0) scale(0.96);
+  }
+  75% {
+    transform: translateY(-2px) scale(1.02);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+// ============================================================
+// RESPONSIVE
+// ============================================================
+@media (max-width: 640px) {
+  .module {
+    padding-left: 1.5rem;
+  }
+
+  .module-trace::before {
+    left: 1.5rem;
+  }
+
+  .module-trace::after {
+    width: calc((100vw - 100%) / 2 + 1.5rem);
+  }
+
+  .projects-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

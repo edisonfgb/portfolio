@@ -1,0 +1,31 @@
+<div
+  class="scroll-fab"
+  [class.scroll-fab--expanded]="hovered()"
+  (mouseenter)="onEnter()"
+  (mouseleave)="onLeave()">
+
+  <div class="scroll-fab__panel">
+    @for (section of sections; track section.id) {
+      <button
+        type="button"
+        class="scroll-fab__item"
+        [class.scroll-fab__item--active]="activeId() === section.id"
+        (click)="scrollTo(section.id)">
+        {{ section.label }}
+      </button>
+    }
+  </div>
+
+  <div class="scroll-fab__ticks">
+    @for (section of sections; track section.id) {
+      <button
+        type="button"
+        class="scroll-fab__tick"
+        [class.scroll-fab__tick--active]="activeId() === section.id"
+        [attr.aria-label]="section.label"
+        (click)="scrollTo(section.id)">
+      </button>
+    }
+  </div>
+
+</div>

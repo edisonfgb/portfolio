@@ -1,0 +1,105 @@
+$bg-surface: #10152a;
+$border-navy: #1b2340;
+$text-base: #f2f3f5;
+$text-muted: #7d8496;
+$accent-blue: #2f6fed;
+
+$font-mono: 'JetBrains Mono', monospace;
+$transition-medium: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+:host {
+  display: block;
+}
+
+.scroll-fab {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+// ------------------------------------------------------------
+// TICKS
+// ------------------------------------------------------------
+.scroll-fab__ticks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.55rem;
+}
+
+.scroll-fab__tick {
+  width: 1.1rem;
+  height: 2px;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: $border-navy;
+  cursor: pointer;
+  transition: background-color $transition-medium, width $transition-medium;
+
+  &:hover {
+    background: rgba($accent-blue, 0.7);
+  }
+
+  &--active {
+    width: 1.6rem;
+    background: $accent-blue;
+  }
+}
+
+// ------------------------------------------------------------
+// PANEL
+// ------------------------------------------------------------
+.scroll-fab__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  max-width: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  background: rgba($bg-surface, 0.95);
+  border: 1px solid $border-navy;
+  border-radius: 0.75rem;
+  backdrop-filter: blur(6px);
+  transform: translateX(0.5rem);
+  transition:
+    max-width $transition-medium,
+    opacity 0.25s ease,
+    transform $transition-medium,
+    padding $transition-medium;
+}
+
+.scroll-fab--expanded .scroll-fab__panel {
+  max-width: 14rem;
+  padding: 0.5rem 0.75rem;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.scroll-fab__item {
+  padding: 0.35rem 0.25rem;
+  background: none;
+  border: none;
+  border-radius: 0.4rem;
+  color: $text-muted;
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  text-align: right;
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: $text-base;
+    background: rgba($accent-blue, 0.12);
+  }
+
+  &--active {
+    color: $accent-blue;
+    font-weight: 600;
+  }
+}
